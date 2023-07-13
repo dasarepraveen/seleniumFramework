@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite parallel="tests" name="Failed suite [All Test Suite]" guice-stage="DEVELOPMENT" verbose="0">
+  <listeners>
+    <listener class-name="BaseTest.listners"/>
+  </listeners>
+  <test thread-count="5" parallel="tests" name="erro validation(failed)" verbose="0">
+    <classes>
+      <class name="errorTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="launchApplication"/>
+          <include name="validateWrongproduct"/>
+        </methods>
+      </class> <!-- errorTest -->
+    </classes>
+  </test> <!-- erro validation(failed) -->
+  <test thread-count="5" parallel="tests" name="/Users/praveendasare/Downloads/creatingFrameWorkWithrahulShetty(failed)" verbose="0">
+    <classes>
+      <class name="endToEndTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="launchApplication"/>
+          <include name="addToCartAndCheckout"/>
+          <include name="OrderHistoryTest"/>
+        </methods>
+      </class> <!-- endToEndTest -->
+    </classes>
+  </test> <!-- /Users/praveendasare/Downloads/creatingFrameWorkWithrahulShetty(failed) -->
+</suite> <!-- Failed suite [All Test Suite] -->

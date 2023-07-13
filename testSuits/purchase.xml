@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite parallel="tests" name="All Test Suite">
+    <groups>
+        <run>
+            <include name="Purchase"/>
+        </run>
+    </groups>
+
+    <test verbose="2" preserve-order="true" name="/Users/praveendasare/Downloads/creatingFrameWorkWithrahulShetty">
+        <classes>
+            <class name="endToEndTest"/>
+        </classes>
+    </test>
+
+    <test name="erro validation">
+        <classes>
+            <class name="errorTest">
+            </class>
+        </classes>
+    </test>
+</suite>
